@@ -1,0 +1,8 @@
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\obj\Debug\AccessToSQLConversion.csproj.SuggestedBindingRedirects.cache
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\obj\Debug\AccessToSQLConversion.csproj.CoreCompileInputs.cache
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\bin\Debug\AccessToSQLConversion.exe.config
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\bin\Debug\AccessToSQLConversion.exe
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\bin\Debug\AccessToSQLConversion.pdb
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\obj\Debug\AccessToSQLConversion.exe
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\obj\Debug\AccessToSQLConversion.pdb
+C:\Projects\AccessToSQLConversion\AccessToSQLConversion\obj\Debug\AccessToSQLConversion.csproj.AssemblyReference.cache
