@@ -11,7 +11,7 @@ namespace AccessToSQLConversion
     {
         static void Main(string[] args)
         {
-            Config conf = ArgsParser.init(args);
+            Config conf = ArgsParser.parseArgs(args);
             LineParser.init(conf.path);
         }
     }

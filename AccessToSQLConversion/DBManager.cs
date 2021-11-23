@@ -9,6 +9,7 @@ using System.Collections;
 namespace AccessToSQLConversion {
     public static class DBManager {
         public static Dictionary<string, List<DBTable>> tableEntries;
+        public static DBSchema schema;
         public static void init() {
 
         }

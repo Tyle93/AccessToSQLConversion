@@ -8,7 +8,8 @@ using System.Collections;
 namespace AccessToSQLConversion {
     public class DBTable {
         public string name { get; set; }
-        public Hashtable columns = new Hashtable();
+        public List<string> coulmns { get; private set; }
+        public List<DBEntry> entries { get; private set; }
         public DBTable() { }
         public DBTable(string tableName) {
             name = tableName;

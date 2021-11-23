@@ -7,17 +7,17 @@ using System.Collections;
 
 namespace AccessToSQLConversion {
     static public class ArgsParser {
-        private static Hashtable flags;
+        private static Dictionary<string,Action<string>> flags;
         private static string conn;
         private static string path;
-        public static Config init(string[] args) {
+        private static void init() {
             clear();
-            flags = new Hashtable(); 
+            flags = new Dictionary<string, Action<string>>(); 
             flags["-p"] = new Action<string>((str) => { path = str; });
             flags["-c"] = new Action<string>((str) => { conn = str; });
-            return parseArgs(args);
         }
-        private static Config parseArgs(string[] args) {
+        public static Config parseArgs(string[] args) {
+            init();
             Action<string> action = null;
 \            foreach(string s in args) {
                 if (isFlag(s)){
@@ -32,7 +32,7 @@ namespace AccessToSQLConversion {
             return new Config(path,conn);
         }
         private static bool isFlag(string arg) {
-            return flags.Contains(arg);
+            return flags.ContainsKey(arg);
         }
         private static void clear() {
             flags = null;
